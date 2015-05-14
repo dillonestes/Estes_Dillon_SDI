@@ -21,6 +21,8 @@ var hasLineBreak = 'These aren\'t the droids you\'re looking for. \n Move along'
 
 // Arrays and accessing data
 
-var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", "Rizzo", firstName];
+var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", firstName]; // index starts at zero
 
 console.log(muppetNames[4] + "is not a muppet.");
+
+muppetNames[3] = "Rizzo";
