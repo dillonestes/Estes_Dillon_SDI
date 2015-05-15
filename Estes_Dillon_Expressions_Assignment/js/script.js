@@ -5,10 +5,12 @@ var docHeight = prompt("Next let's calculate the height of the document:"); // g
 var containerWidth = prompt("Great, so what'ss the width of the content we want to center?"); // get the width of the container
 var containerHeight = prompt("Alright, now whats the height of the content we want to center?");  // get the height of the container
 
-var newWidth = docWidth - containerWidth; // find the difference in width
-var newHeight = docHeight - containerHeight; // find the difference in height
+var width = [docWidth, containerWidth]; // convert both widths to an array
+var height = [docHeight, containerHeight]; // convert both heights to an array
+var newWidth = width[0] - width[1]; // find the difference in width
+var newHeight = height[0] - height[1]; // find the difference in height
 
-newWidth /= 2; // calculate the offset width needed to center
+newWidthn/= 2; // calculate the offset width needed to center
 
 // alert(newWidth); test new offset
 
