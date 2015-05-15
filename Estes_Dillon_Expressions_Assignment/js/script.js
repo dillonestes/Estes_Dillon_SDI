@@ -1,4 +1,4 @@
-// Dillon Estes
+// Dillon Estes 05-14-2015 Expressions Assignment
 
 var docWidth = prompt("Let's center our content in our webpage. Let's start with the width of the document:"); // get the width of the document
 var docHeight = prompt("Next let's calculate the height of the document:"); // get the height of the document
@@ -22,3 +22,7 @@ var offsets = "The container(" + containerWidth + "x" + containerHeight + ") is 
 
 console.log(offsets);
 document.write(offsets);
+
+// I used both 1200 for height and width ofthe document.
+// I then entered 600 for height and width of the container.
+// My result was 300 for both height and width
