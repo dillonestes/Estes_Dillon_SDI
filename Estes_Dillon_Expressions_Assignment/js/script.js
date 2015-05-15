@@ -10,7 +10,7 @@ var height = [docHeight, containerHeight]; // convert both heights to an array
 var newWidth = width[0] - width[1]; // find the difference in width
 var newHeight = height[0] - height[1]; // find the difference in height
 
-newWidthn/= 2; // calculate the offset width needed to center
+newWidth /= 2; // calculate the offset width needed to center
 
 // alert(newWidth); test new offset
 
@@ -18,7 +18,7 @@ newHeight /=2; // calculate the offset height needed to center
 
 // alert(newWidth + " " + newHeight); // alert the results;
 
-var offsets = "The container(" + containerWidth + "x" + containerHeight + ") is offset by " + newWidth + "px at the top and offset by " + newHeight + "px at the left."; // print the results to the log, describing offset.
+var offsets = "The container(" + containerWidth + "x" + containerHeight + ") is offset by " + newWidth + "px at the top and offset by " + newHeight + "px at the left relative to the document."; // print the results to the log, describing offset.
 
 console.log(offsets);
 document.write(offsets);
