@@ -1,7 +1,7 @@
 // Dillon Estes 05-21-2015 Conditionals Assignment
 
 // Let's make a love calculator!
-var firstName = prompt("What's your first name?");// Get first name
+var firstName = prompt("Love calculator! What's your first name?");// Get first name
 var lastName = prompt("What's your last name?"); // Get last name
 var soFirstName = prompt("What's your significant other's first name?"); // Get other person's first name
 var soLastName = prompt("What's your significant other's last name?"); // Get other person's last name
@@ -31,12 +31,14 @@ if(output >= isMatch) { // check the values after subtracting them to see if the
 	var matched = "Both you (" + firstName + ") and " + soFirstName + " are a perfect match!";
 } else if (output < isMatch){ // check the values after subtracting to see if they're less than 10
 	//alert("no");
-	var matched = "Both you (" + firstName + ") and " + soFirstName + " are a terrible match!";
+	matched = "Both you (" + firstName + ") and " + soFirstName + " are a terrible match!";
 } else if(output <= 0){ // check the values after subtracting to see if they're less than or equal to 0
 	//alert("There's no hope for the two of you!");
-	var matched = "There's no hope for the two of you!";
+	matched = "There's no hope for the two of you!";
 }
 
 console.log(matched); // log to the console
 
 alert(matched);
+
+// I started testing it by using my first name in both spots, for both sets of names. Since the lengths were equal,nthey were multiplied by each other and 5 was subtracted. The result, being 0, returned the variable "matched" as "There's no hope for the two of you!". I then tried using my girlfriend's name, Samantha Wines in the first two prompts, then my own in the last, and "matched" returned "Both you (Samantha) and Dillon are a perfect match!". Both tests were successful on paper as well.
